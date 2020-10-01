@@ -1,9 +1,7 @@
-import requests
-from osrsbox import items_api
-import asyncio
 import aiohttp
+import asyncio
+from osrsbox import items_api
 
-items = items_api.load()
 
 async def fetch(session, item):
     async with session.get(f"https://www.osrsbox.com/osrsbox-db/items-icons/{item.id}.png") as response:
@@ -11,6 +9,7 @@ async def fetch(session, item):
             handler.write(await response.read())
 
 async def main():
+    items = items_api.load()
     async with aiohttp.ClientSession() as session:
         await asyncio.gather(*[fetch(session, item) for item in items])
 
