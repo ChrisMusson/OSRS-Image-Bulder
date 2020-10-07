@@ -3,3 +3,7 @@ Given an initial image, this repository contains a `build.py` file that aims to 
 
 ### Examples
 <img src="/examples/original/pocketwatch.png" width="300"/> <img src="/examples/built/pocketwatch.png" width="300"/>
+<img src="/examples/original/pool.png" width="300"/> <img src="/examples/built/pool.png" width="300"/>
+<img src="/examples/original/serrano.png" width="200"/> <img src="/examples/built/pocketwatch.png" width="200"/>
+<img src="/examples/original/mandrill.jpg" width="300"/> <img src="/examples/built/mandrill.jpg" width="300"/>
+<img src="/examples/original/ash.jpg" width="300"/> <img src="/examples/built/ash.jpg" width="300"/>
