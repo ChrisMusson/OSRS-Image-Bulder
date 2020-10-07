@@ -10,7 +10,9 @@ Given an initial image, this repository contains a `build.py` file that aims to 
 
 ### Usage
 1. Fork this repository
-1. Clone this repository
+1. Clone the forked repository
 1. `cd` into the cloned repository
 1. Download an image you want to build and save it as `<name>.<extension>` in the `examples/original/` folder.
 1. run `build.py`, specifying the name of the downloaded file and optionally the number of boxes to split your image into horizontally and vertically (default is 100x80). e.g. `python build.py -in pool.png -wi 150 -he 100`. The image, when built, will appear in the `examples/built/` folder.
+
+Note that if you want, you can 'ban' certain items from appearing in the final image by adding the item's ID into the `banned_IDs` list in `find_average_item_colours.py`, running `python find_average_item_colours.py`, and then running `build.py` again with your desired parameters.
